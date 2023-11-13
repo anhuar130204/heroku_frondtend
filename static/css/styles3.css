@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+    background-color: #8f4a45;
+}
+
+#detalle-contacto {
+    background-color: #e4a0a0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    margin: 8px 0;
+}
+
+#delete-contact-form {
+    background-color: #e4a0a0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    background-color: #853937;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button[type="submit"] {
+    background-color: #853937;
+}
+
+button:hover {
+    background-color: #853937;
+}
+
+#error-mensaje {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#contact-details {
+    background-color: #e4a0a0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+
+}

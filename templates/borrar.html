@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Borrar Contacto</title>
+    <script src="../static/js/borrar.js"></script>
+    <link rel="stylesheet" href="../static/css/styles3.css"> 
+
+</head>
+
+<body>
+    
+
+    <div id="detalle-contacto">
+        <h1>Borrar Contacto</h1>
+        <p>Email: <span id="email"></span></p>
+        <p>Nombre: <span id="nombre"></span></p>
+        <p>Telefono: <span id="telefono"></span></p>
+    </div>
+
+    <form id="delete-contact-form">
+        
+        <button type="button" onclick="borrarContacto()">Borrar</button>
+        <button type="button" onclick="cancelar()">Cancelar</button>
+    </form>
+
+    <div id="error-mensaje"></div>
+
+    
+</body>
+</html>

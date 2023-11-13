@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Contacto</title>
+    <link rel="stylesheet" href="../static/css/styles.css"> 
+    <script src="../static/js/buscar.js"></script>
+</head>
+<body>
+    <h1>Buscar Contacto</h1>
+    
+    <label for="buscarEmail">Correo Electrónico:</label>
+    <input type="text" id="buscarEmail" required><br><br>
+    <button onclick="buscarporEmail()">Buscar</button>
+    <button onclick="window.location.href = '/';">Regresar</button>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody id="buscarResult"></tbody>
+    </table>
+
+    
+</body>
+</html>

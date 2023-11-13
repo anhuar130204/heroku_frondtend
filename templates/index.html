@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../static/css/styles.css"> 
+    <script type="text/javascript" src="../static/js/get_all.js"></script>
+    <style>
+        .options {
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contactos</h1>
+    <a href="buscar"><button>Buscar</button></a>
+    <a href="insertar"><button>Insertar</button></a>
+    <table border="1" id="table_contactos">
+        <thead id="thead_contactos">
+            <th>Email</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Opciones</th>
+        </thead>
+        <tbody id="tbody_contactos">
+        </tbody>
+    </table>
+    <script>
+        document.body.onload = getAll();
+    </script>
+</body>
+</html>
