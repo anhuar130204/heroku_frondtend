@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    fetch(`http://127.0.0.1:8000/contactos/${encodeURIComponent(email)}`)
+    fetch(`https://contactos-back-3955e37c5233.herokuapp.com/contactos/${encodeURIComponent(email)}`)
         .then(response => response.json())
         .then(data => {
             const contactDetailsDiv = document.getElementById("contact-details");
