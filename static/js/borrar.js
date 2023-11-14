@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     const email = params.get("email");
 
-    fetch(`http://127.0.0.1:8000/contactos/${encodeURIComponent(email)}`)
+    fetch(`https://contactos-back-3955e37c5233.herokuapp.com/contactos/${encodeURIComponent(email)}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Error al obtener detalles del contacto. Código de estado: ${response.status}`);
@@ -29,7 +29,7 @@ function borrarContacto() {
     const params = new URLSearchParams(window.location.search);
     const email = params.get("email");
 
-    fetch(`http://127.0.0.1:8000/contactos/${encodeURIComponent(email)}`, {
+    fetch(`https://contactos-back-3955e37c5233.herokuapp.com/contactos/${encodeURIComponent(email)}`, {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',
