@@ -1,6 +1,6 @@
 function insertar(email, nombre, telefono) {
     var request = new XMLHttpRequest();
-    request.open('POST', "http://127.0.0.1:8000/contactos");
+    request.open('POST', "https://contactos-back-3955e37c5233.herokuapp.com/contactos");
     request.setRequestHeader("Content-Type", "application/json");
 
     // Crear un objeto con los parámetros a enviar
