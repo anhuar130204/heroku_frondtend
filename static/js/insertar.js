@@ -20,6 +20,7 @@ function insertar() {
             const response = JSON.parse(request.responseText);
             console.log("Respuesta:", response);
             alert("Contacto insertado correctamente");
+            window.location.href = "/";
         } else {
             console.error("Error al hacer la solicitud:", request.status, request.statusText);
             alert("Error al insertar el contacto. Por favor, inténtalo de nuevo.");
