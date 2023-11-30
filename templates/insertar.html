@@ -2,14 +2,12 @@
 <html lang="es">
 <head>
     <link rel="stylesheet" href="../static/css/styles2.css"> 
-    <script type="text/javascript" src="../static/js/insertar.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insertar contacto</title>
 </head>
 
 <body>
-    
     <form action="#" method="post">
         <h1>Insertar contacto</h1>
         <label for="email">Email:</label>
@@ -21,8 +19,10 @@
         <label for="telefono">Teléfono:</label>
         <input type="tel" id="telefono" maxlength="10" name="telefono" required><br><br>
 
-        <button type="submit" onclick="insertar(document.getElementById('email').value, document.getElementById('nombre').value, document.getElementById('telefono').value)">Insertar</button>
+        <button type="button" onclick="insertar()">Insertar</button>
         <button type="button" onclick="cancelar()">Cancelar</button>
     </form>
+
+    <script type="text/javascript" src="../static/js/insertar.js"></script>
 </body>
 </html>
