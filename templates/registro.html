@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="../static/css/styles2.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+
+
+
+<form id="registroForm">
+    <h1>Registro de Usuario</h1>
+    <label for="username">Usuario:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="registrarUsuario()">Registrar</button>
+    <a href="#" id="regresar"><button onclick="regresar()">Regresar</button></a>
+    <a href="#" id="token"><button onclick="token()">Tengo token</button></a>
+
+    
+</form>
+
+<script src="../static/js/registro.js"></script>
+
+
+</body>
+</html>

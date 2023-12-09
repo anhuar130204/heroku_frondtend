@@ -3,8 +3,15 @@ from flask import render_template
 
 
 app = Flask(__name__)
-
 @app.route("/")
+def sesion():
+    return render_template('inicio_sesion.html')
+
+@app.route("/registro")
+def inicio():
+    return render_template('registro.html')
+    
+@app.route("/contactos")
 def index():
     message = "Hello, World"
     return render_template('index.html', message=message)
@@ -28,6 +35,10 @@ def editar():
 @app.route("/borrar")
 def borrar():
     return render_template('borrar.html')
+@app.route("/token")
+def  token():
+    return render_template('token.html')
+    
 
     
         

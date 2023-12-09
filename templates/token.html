@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../static/css/styles2.css"> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación de Token</title>
+</head>
+<body>
+
+<form action="/validar-token" method="GET" onsubmit="validarToken(event)">
+  <label for="token">Token:</label>
+  <input type="text" id="token" name="token" required>
+  <button type="submit">Validar</button>
+</form>
+
+<script src="../static/js/autenticacion.js">
+</script>
+
+</body>
+</html>

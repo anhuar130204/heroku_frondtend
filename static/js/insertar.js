@@ -2,7 +2,12 @@ function insertar() {
     var email = document.getElementById('email').value;
     var nombre = document.getElementById('nombre').value;
     var telefono = document.getElementById('telefono').value;
-
+    var token = sessionStorage.getItem("token");
+  
+    if (!token) {
+      console.error('Token no encontrado en sessionStorage.');
+      return;
+    }
     var request = new XMLHttpRequest();
     request.open('POST', "https://contactos-back-3955e37c5233.herokuapp.com/contactos");
     request.setRequestHeader("Content-Type", "application/json");

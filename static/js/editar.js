@@ -6,7 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailInput = document.getElementById("email");
     const nombreInput = document.getElementById("nombre");
     const telefonoInput = document.getElementById("telefono");
-
+    var token = sessionStorage.getItem("token");
+  
+    if (!token) {
+      console.error('Token no encontrado en sessionStorage.');
+      return;
+    }
     fetch(`https://contactos-back-3955e37c5233.herokuapp.com/contactos/${encodeURIComponent(email)}`)
         .then(response => response.json())
         .then(data => {

@@ -1,7 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     const email = params.get("email");
-
+    var token = sessionStorage.getItem("token");
+  
+    // Verificar si el token está presente en sessionStorage
+    if (!token) {
+      console.error('Token no encontrado en sessionStorage.');
+      return;
+    }
 
 
     fetch(`https://contactos-back-3955e37c5233.herokuapp.com/contactos/${encodeURIComponent(email)}`)
